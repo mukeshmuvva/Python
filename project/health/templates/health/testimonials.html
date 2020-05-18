@@ -1,0 +1,9 @@
+{%if  Testimonials_list%}
+<ul class="list-group"></ul>
+{%for testimonial in  Testimonials_list%}
+<li class="list-group-item">{{testimonial.description}}&nbsp;-{{testimonial.username}}</li>
+{% endfor %}
+</ul>
+{%else%}
+    <h6>No Testimonials Available</h6>
+{% endif %}

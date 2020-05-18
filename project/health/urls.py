@@ -3,6 +3,12 @@ from . import views
 
 urlpatterns = [
     path('', views.index, name='index'),
+    path('home/', views.home, name='home'),
+    path('testimonials/', views.testimonials, name='testimonials'),
+    path('beneficts/', views.beneficts, name='beneficts'),
+    path('contact/', views.contact, name='contact'),
+    path('feedback/', views.feedback, name='feedback'),
+    path('fbsubmit', views.fbsubmit,name='fbsubmit'),
     #path('<int:question_id>/', views.detail, name='detail'),
     # ex: /polls/5/results/
     #path('<int:question_id>/results/', views.results, name='results'),
